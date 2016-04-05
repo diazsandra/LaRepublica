@@ -1,0 +1,110 @@
+.btn-radius {
+	border-radius: 5px !important;
+	width: 20%;
+	font-weight: bold !important;
+}
+
+@mixin blogs {
+	width: 100%;
+	text-align: center;
+	padding: 0 !important;	
+	
+	h4 {
+		font-weight: bold;
+		margin-bottom: 15%;
+	}
+	a {
+		color: inherit !important;
+			}
+	.well {
+	/*Revisar por qué no pone el fondo de diferente color*/
+		background-color: #808B96 !important;
+		border-radius: 0 !important;
+		margin: 1% !important;
+		padding: 2% !important;
+		
+		.thumbnail {
+			margin-bottom: 0 !important;
+			width: 100%;
+		}
+		.text-left {
+			margin: 0 !important;
+			padding: 0 !important;
+			h4 {
+				margin: 0px !important;
+				color: $gris3;
+			}
+			h5 {
+				font-weight: bold;
+				margin-bottom: 0 !important;
+			}
+			
+		}
+
+	}
+}
+
+
+.box1 { @include blogs}
+
+@media (min-width: 300px) and (max-width: 768px){
+	.btn-radius {
+	width: 100%;
+}
+}
+
+
+/* Navegador */
+
+#barrared {
+  background-color:  #A93226  !important ;
+  border-color: white !important; 
+}
+
+.navbar-inverse {
+    background-image: -webkit-linear-gradient(top, #A93226 0, #222 100%) !important;
+    background-image: -o-linear-gradient(top, #A93226 0, #222 100%) !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c12e2a), to(#222)) !important;
+    background-image: linear-gradient(to bottom, #A93226 0, rgba(193, 46, 42, 0.67) 100%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: white !important; 
+	background-color:  #A93226     !important;}
+
+ul {
+  padding: 1% 2% !important; 
+   	li { 
+  		margin: 0 3% !important;
+  	} 
+	}
+@media (min-width: 768px){
+.navbar-collapse .navbar-nav.navbar-left:first-child {
+    margin-left: -10px;
+    width: 100%;
+}
+}
+
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+      background-image: linear-gradient(to bottom, #681412 0, #961511 100%);
+  border-radius: 5px !important; }
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  background-color: #EC7063  !important;
+  border-radius: 5px !important; }
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background-color: #EC7063  !important;
+  border-radius: 5px !important; }
+
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+  background-color: #EC7063   !important; }

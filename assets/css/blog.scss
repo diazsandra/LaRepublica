@@ -1,0 +1,87 @@
+@import "variables/_variables";
+@import "SegundaParteColumnistas/_columnistas";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic);
+
+* {
+	font-family: 'Open Sans Condensed' ;
+}
+
+
+/* Títulos */
+
+.h1blog {
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+.h4blog {
+	color: $muted !important;
+	margin-top: 5%;
+	margin-bottom: 1%;
+	i {
+		color: $red;
+		font-weight: bold;
+	}
+}
+
+.banner {
+	width: 100%;
+}
+
+/* BLOGS */
+.marginll {
+	margin-bottom: 14% !important;
+}
+
+@mixin blogs {
+	width: 100%;
+	border: 1px solid $muted;
+	text-align: center;
+	padding: 10% 2% 2% 2%;
+	margin: 5%;
+	h4 {
+		font-weight: bold;
+		margin-bottom: 15%;
+	}
+	a {
+		color: inherit !important;
+			}
+	.well {
+	/*Revisar por qué no pone el fondo de diferente color*/
+		background-color: #808B96 !important;
+		border-radius: 0 !important;
+		margin: 0 !important;
+		padding: 2% !important;
+		
+		.thumbnail {
+			margin-bottom: 0 !important;
+			width: 100%;
+		}
+		.text-left {
+			margin: 0 !important;
+			padding: 0 !important;
+			h4 {
+				margin: 0px !important;
+				color: $gris3;
+			}
+			h5 {
+				font-weight: bold;
+				margin-bottom: 0 !important;
+			}
+			
+		}
+
+	}
+}
+
+
+.box { @include blogs}
+
+@media (min-width: 300px) and (max-width: 600px) {
+	.text-left {
+		text-align: center !important; 
+		margin: 5% !important;
+		padding: 5% !important;
+	}
+
+}
